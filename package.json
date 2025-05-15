@@ -1,17 +1,17 @@
 {
-	"name": "groovy-guru",
-	"displayName": "Groovy-Guru",
+	"name": "easy-groovy",
+	"displayName": "Easy Groovy",
 	"description": "Groovy Intellisense for Visual Studio Code",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"preview": true,
-	"publisher": "DontShaveTheYak",
-	"homepage": "https://github.com/DontShaveTheYak/groovy-guru",
+	"publisher": "cosven",
+	"homepage": "https://github.com/cosven/easy-groovy",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/DontShaveTheYak/groovy-guru.git"
+		"url": "https://github.com/cosven/easy-groovy.git"
 	},
 	"bugs": {
-		"url": "https://github.com/DontShaveTheYak/groovy-guru/issues"
+		"url": "https://github.com/cosven/easy-groovy/issues"
 	},
 	"icon": "media/icon.png",
 	"galleryBanner": {
@@ -28,7 +28,7 @@
 		"Jenkins",
 		"Jenkinsfile",
 		"IntelliSense",
-		"DevOps"
+		"LSP"
 	],
 	"engines": {
 		"vscode": "^1.59.0"
@@ -101,7 +101,8 @@
 		"build"
 	],
 	"dependencies": {
-		"vscode-languageclient": "7.0.0"
+		"vscode-languageclient": "7.0.0",
+		"yarn": "^1.22.22"
 	},
 	"devDependencies": {
 		"@types/glob": "7.1.4",
@@ -117,7 +118,7 @@
 		"pre-commit": "1.2.2",
 		"ts-loader": "9.2.5",
 		"typescript": "4.3.5",
-		"vsce": "1.96.1",
+		"vsce": "^1.96.1",
 		"vscode-test": "1.6.1",
 		"webpack": "5.49.0",
 		"webpack-cli": "4.7.2"

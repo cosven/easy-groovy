@@ -1,10 +1,6 @@
 # Groovy IntelliSense for Visual Studio Code
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/DontShaveTheYak/groovy-guru/Tests?label=Tests)](https://github.com/DontShaveTheYak/groovy-guru/actions/workflows/test.yml?query=branch%3Amaster)
-[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version-short/DontShaveTheYak.groovy-guru.svg "Current Release")][VS Code Groovy extension]
 
-The [Groovy-Guru][VS Code Groovy extension] extension
-provides rich language support for the
-[Groovy](https://groovy-lang.org/) programming language, using the Groovy [Language Server](https://github.com/prominic/groovy-language-server). You can also install [Groovy-Guru][VS Code Groovy extension] using the [Jenkins Extension Pack](https://marketplace.visualstudio.com/items?itemName=DontShaveTheYak.jenkins-extension-pack), which is a must have when developing pipelines for Jenkins.
+Forked from <https://github.com/DontShaveTheYak/groovy-guru>
 
 ## Quick Start
 
