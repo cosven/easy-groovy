@@ -2,7 +2,7 @@
 	"name": "easy-groovy",
 	"displayName": "Easy Groovy",
 	"description": "Groovy Intellisense for Visual Studio Code",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"preview": true,
 	"publisher": "cosven",
 	"homepage": "https://github.com/cosven/easy-groovy",
