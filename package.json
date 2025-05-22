@@ -76,6 +76,11 @@
 					"items": {
 						"type": "string"
 					}
+				},
+				"lsp.debug": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enables debugging for the Groovy language server."
 				}
 			}
 		}

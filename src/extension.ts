@@ -57,6 +57,9 @@ function onDidChangeConfiguration(event: vscode.ConfigurationChangeEvent) {
     //we're going to try to kill the language server and then restart
     //it with the new settings
     restartLanguageServer();
+  } else if (event.affectsConfiguration("groovy.lsp.debug")) {
+    channel.appendLine('The setting "groovy.lsp.debug" has been updated.');
+    restartLanguageServer();
   }
 }
 
@@ -184,8 +187,13 @@ function startLanguageServer() {
           ),
         ];
 
-        //uncomment to allow a debugger to attach to the language server
-        //args.unshift("-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:0,quiet=y");
+        let settingsLSPDebug = vscode.workspace
+          .getConfiguration("groovy")
+          .get("lsp.debug") as boolean;
+        if (settingsLSPDebug) {
+          args.unshift("-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:0,quiet=y");
+        }
+
         let executable: Executable = {
           command: javaPath,
           args: args,
