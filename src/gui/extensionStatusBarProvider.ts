@@ -30,18 +30,18 @@ class ExtensionStatusBarProvider implements Disposable {
 
 	public startUp(): void {
 		this.statusBarItem.text = StatusIcon.launching;
-		this.statusBarItem.tooltip = 'Groovy-Guru is Starting.';
+		this.statusBarItem.tooltip = 'Easy Groovy is Starting.';
 		this.statusBarItem.show();
 	}
 
 	public restart(): void {
 		this.statusBarItem.text = StatusIcon.busy;
-		this.statusBarItem.tooltip = 'Groovy-Guru is Restarting.';
+		this.statusBarItem.tooltip = 'Easy Groovy is Restarting.';
 	}
 
 	public running(): void {
 		this.statusBarItem.text = StatusIcon.ready;
-		this.statusBarItem.tooltip = 'Groovy-Guru is running.';
+		this.statusBarItem.tooltip = 'Easy Groovy is running.';
 	}
 
 	public updateText(text: string): void {

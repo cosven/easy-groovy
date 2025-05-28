@@ -40,7 +40,7 @@ let extensionContext: vscode.ExtensionContext | null = null;
 let languageClient: LanguageClient | null = null;
 let javaPath: string | null = null;
 
-let channel = vscode.window.createOutputChannel('Groovy Guru Client');
+let channel = vscode.window.createOutputChannel('Easy Groovy Client');
 
 function onDidChangeConfiguration(event: vscode.ConfigurationChangeEvent) {
 
