@@ -77,7 +77,7 @@
 						"type": "string"
 					}
 				},
-				"lsp.debug": {
+				"groovy.lsp.debug": {
 					"type": "boolean",
 					"default": false,
 					"description": "Enables debugging for the Groovy language server."
@@ -96,7 +96,7 @@
 		"lint": "eslint src --ext ts",
 		"test": "node ./out/test/runTest.js",
 		"build-server": "mkdir -p bin && cd contrib/groovy-language-server/ && ./gradlew build && cp build/libs/groovy-language-server-all.jar ../../bin/",
-		"build-extension": "vsce package --yarn --no-git-tag-version",
+		"build-extension": "NODE_OPTIONS=--openssl-legacy-provider vsce package --yarn --no-git-tag-version",
 		"build": "yarn run build-server && yarn run build-extension",
 		"ci": "yarn run pretest && yarn run build && yarn run test",
 		"publish": "vsce publish --yarn --no-git-tag-version --packagePath"
