@@ -36,6 +36,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Install vsce
+        run: npm install vsce -g
+
       - name: Build groovy-language-server
         run: yarn run build-server
 
