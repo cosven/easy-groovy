@@ -32,10 +32,9 @@ jobs:
           distribution: 'adopt'
 
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'yarn'
 
       - name: Build groovy-language-server
         run: yarn run build-server
