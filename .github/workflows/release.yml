@@ -36,6 +36,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
       - name: Install vsce
         run: npm install vsce -g
 
