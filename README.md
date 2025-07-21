@@ -7,6 +7,8 @@ some problems that I met. Check the changelog for details.
 
 ## Changelog
 
+- 0.1.3 (2025-07-21)
+  - Lock dependecies
 - 0.1.2 (2025-05-28)
   - Add `groovy.lsp.debug` variable to enable debug mode for the Groovy Language Server.
 - 0.1.1 (2025-05-19)
